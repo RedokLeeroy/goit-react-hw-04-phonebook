@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FormSubmit } from "./FormSubmit";
 import { NameInput } from "./NameInput";
 import { PhoneInput } from "./PhoneInput";
+import PropTypes from "prop-types"
 
 
 
@@ -33,3 +34,7 @@ export const PhonebookForm = ({onSubmit}) => {
         </form>
     )
 }
+
+PhonebookForm.propTypes = {
+    onSubmit: PropTypes.func
+    }
